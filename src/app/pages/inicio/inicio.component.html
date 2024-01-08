@@ -1,1 +1,103 @@
-<p>inicio works!</p>
+<style>
+    .contImg{
+        height: 225px;
+        overflow: hidden;
+    }
+
+    .contImg img{
+        width:100%;
+    }
+
+    .contTit{
+        height: 60px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contProductos{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .contProd{
+        background-color: #d0dccc;
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        transition: 0.4s;
+    }
+
+    .contProd:hover{
+        transform: scale(1.04);
+    }
+
+    .imgProd{
+        width: auto;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .imgProd img{
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .infoProd{
+        padding: 5px;
+    }
+
+    .titleProd{
+        margin: 5px;
+        text-align: center;
+        height: auto;
+    }
+
+    .DescProd{
+        padding: 5px;
+        font-size: 14px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .precioProd{
+        height: auto;
+        padding: 5px;
+        color: green;
+        display: flex;
+        align-items: center;
+    }
+
+</style>
+
+<section>
+    <div class="contImg">
+        <img src="../../../assets/imagenes/inicio.jpg" alt="Ropa">
+    </div>
+    <div class="contTit">
+        <h1>PRODUCTOS DESTACADOS</h1>
+    </div>
+    <div class="contProductos">
+        <div class="contProd">
+            <div class="imgProd">
+                <img src="../../../assets/imagenes/pantalon-negro.jpg" alt="">
+            </div>
+            <div class="infoProd">
+                <div class="titleProd">
+                    <b>Pantalones deportivos para hombre</b>
+                </div>
+                <div class="DescProd">
+                    <p>Pantalones negros suaves y de gran resistencia para toda ocasion</p>
+                </div>
+                <div class="precioProd">
+                    <b>Precio: $39.99</b>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
