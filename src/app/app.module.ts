@@ -10,6 +10,8 @@ import { CarritoComponent } from './pages/carrito/carrito.component';
 import { SignupComponent } from './form/signup/signup.component';
 import { RegisterComponent } from './form/register/register.component';
 import { AcercadeComponent } from './pages/acercade/acercade.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { AcercadeComponent } from './pages/acercade/acercade.component';
     CarritoComponent,
     SignupComponent,
     RegisterComponent,
-    AcercadeComponent
+    AcercadeComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,115 @@
+<style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+  
+    /**** HEADER ****/
+  
+    header{
+      background-color: #184834;
+      padding: 12px;
+      color: white;
+      display: flex;
+      gap: 5px;
+    }
+  
+    .infUser{
+      width: 20%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white;
+      border-radius: 15px;
+    }
+  
+    .infUser .imgUser{
+      width: 20%;
+      padding: 5px;
+    }
+  
+    .imgCarrito{
+      width: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white;
+      border-radius: 15px;
+    }
+  
+    .contLogo{
+      width: 30%;
+      border: 1px solid white;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .contBusc{
+      width: 55%;
+      display: flex;
+      align-items: center;
+      padding: 7px;
+      height: auto;
+    }
+  
+    .contBusc input{
+      width: 100%;
+      height: 40px;
+      padding: 7px;
+      border: none;
+    }
+  
+    .contBusc .iconBusc{
+      width: 10%;
+      border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .contInput{
+      width: 100%;
+    }
+  
+    .busc{
+      border: 1px solid white;
+      display: flex;
+      width: 100%;
+    }
+
+  </style>
+  
+  <header>
+    <div class="contLogo">
+      <p>Logo</p>
+    </div>
+    <div class="contBusc">
+      <div class="busc">
+        <div class="contInput">
+          <input type="search">
+        </div>
+        <div class="iconBusc">
+          <img src="../assets/iconos/Buscador.png" alt="Buscador">
+        </div>
+      </div>
+    </div>
+    <div class="imgCarrito">
+        <img src="../assets/iconos/carrito.png" alt="Carrito">
+    </div>
+    <div class="infUser">
+      <div class="imgUser">
+          <img src="../assets/iconos/user.png" alt="Usuario">
+      </div>
+      <div class="nomUser">
+        <div class="text">
+          <p>Mi cuenta</p>
+        </div>
+        <div class="nomUser">
+          <p>Nombre Usuario</p>
+        </div>
+      </div>
+    </div>
+  </header>
