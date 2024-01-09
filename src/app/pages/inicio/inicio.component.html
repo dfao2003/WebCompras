@@ -21,6 +21,10 @@
         padding-bottom: 30px;
         padding-left: 50px;
         padding-right: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:10px;
     }
 
     .contProd{
@@ -33,6 +37,7 @@
 
     .contProd:hover{
         transform: scale(1.04);
+        cursor: pointer;
     }
 
     .imgProd{
@@ -83,21 +88,21 @@
         <h1>PRODUCTOS DESTACADOS</h1>
     </div>
     <div class="contProductos">
-        <div class="contProd">
-            <div class="imgProd">
-                <img src="../../../assets/imagenes/pantalon-negro.jpg" alt="">
+            <div (click)="irProducto()" class="contProd">
+                <div class="imgProd">
+                    <img src="../../../assets/imagenes/pantalon-negro.jpg" alt="">
+                </div>
+                <div class="infoProd">
+                    <div class="titleProd">
+                        <b>Pantalones jean negros para hombre</b>
+                    </div>
+                    <div class="DescProd">
+                        <p>Pantalones negros suaves y de gran resistencia para toda ocasion</p>
+                    </div>
+                    <div class="precioProd">
+                        <b>Precio: $39.99</b>
+                    </div>
+                </div>
             </div>
-            <div class="infoProd">
-                <div class="titleProd">
-                    <b>Pantalones deportivos para hombre</b>
-                </div>
-                <div class="DescProd">
-                    <p>Pantalones negros suaves y de gran resistencia para toda ocasion</p>
-                </div>
-                <div class="precioProd">
-                    <b>Precio: $39.99</b>
-                </div>
-            </div>
-        </div>
     </div>
 </section>

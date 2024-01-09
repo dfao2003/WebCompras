@@ -12,6 +12,9 @@ import { RegisterComponent } from './form/register/register.component';
 import { AcercadeComponent } from './pages/acercade/acercade.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { ProductoComponent } from './pages/producto/producto.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -24,11 +27,13 @@ import { HeaderComponent } from './header/header.component';
     RegisterComponent,
     AcercadeComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProductoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
