@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class InicioComponent {
 
+  titulo: string = 'PRODUCTOS DESTACADO';
+
 }

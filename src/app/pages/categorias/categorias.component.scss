@@ -1,0 +1,45 @@
+.titulo{
+  width: auto;
+  text-align: center;
+}
+
+.contenedor{
+  width: 90%;
+  height: auto;
+  margin: 4% 10%;
+}
+
+.contProd{
+  background-color: #d0dccc;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  transition: 0.4s;
+  margin: 5% 3%;
+  display: inline-block;
+}
+
+.contProd:hover{
+  transform: scale(1.04);
+}
+
+.imgProd{
+  width: auto;
+  height: 200px;
+  overflow: auto;
+  align-content: center;
+}
+
+.imgProd img{
+  align-content: center;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.titleProd{
+  margin: 5px;
+  text-align: center;
+  height: auto;
+}
+

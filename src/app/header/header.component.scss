@@ -1,0 +1,88 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/**** HEADER ****/
+
+header{
+  background-color: #184834;
+  padding: 12px;
+  color: white;
+  display: flex;
+  gap: 5px;
+}
+
+.infUser{
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.infUser .imgUser{
+  width: 20%;
+  padding: 5px;
+}
+
+.imgCarrito{
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.contLogo{
+  width: 30%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contBusc{
+  width: 55%;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  height: auto;
+}
+
+.contBusc input{
+  width: 100%;
+  height: 40px;
+  padding: 7px;
+  border: none;
+}
+
+.contBusc .iconBusc{
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contInput{
+  height: auto;
+  align-items: center;
+  width: 100%;
+}
+
+.busc{
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+img{
+  max-width: 100%;
+  height: 50%;
+}
+
+.buscar{
+  max-width: 50%;
+  height: auto;
+}

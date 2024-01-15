@@ -10,6 +10,7 @@ export class FooterComponent {
     {path: 'paginas/inicio', title:'Inicio'},
     {path: 'paginas/acercade', title: 'Acerca de'},
     {path: 'paginas/categorias', title: 'Categorias'},
+    {path: 'paginas/contacto', title: 'Contactenos'},
     {path: 'paginas/registrarse', title: 'Registrarse'},
     {path: 'paginas/iniciarSesion', title: 'Iniciar sesion'}
   ]

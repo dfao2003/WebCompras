@@ -7,11 +7,14 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { CategoriasComponent } from './pages/categorias/categorias.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
-import { SignupComponent } from './form/signup/signup.component';
-import { RegisterComponent } from './form/register/register.component';
 import { AcercadeComponent } from './pages/acercade/acercade.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { CategoriasProductosComponent } from './pages/categorias-productos/categorias-productos.component';
+import { IniciarSesionComponent } from './pages/iniciar-sesion/iniciar-sesion.component';
+import { RegistrarseComponent } from './pages/registrarse/registrarse.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
+import { EditarUsuarioComponent } from './pages/editar-usuario/editar-usuario.component'
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { HeaderComponent } from './header/header.component';
     MenuComponent,
     CategoriasComponent,
     CarritoComponent,
-    SignupComponent,
-    RegisterComponent,
     AcercadeComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    CategoriasProductosComponent,
+    IniciarSesionComponent,
+    RegistrarseComponent,
+    ContactoComponent,
+    EditarUsuarioComponent,
   ],
   imports: [
     BrowserModule,
