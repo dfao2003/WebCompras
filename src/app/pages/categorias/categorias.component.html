@@ -1,13 +1,17 @@
-  <div class="titulo">
-    <h1>CATEGORIAS</h1>
-  </div>
-  <div class="contenedor">
-    <div class="contProd" *ngFor='let cat of categorias'>
-      <div class="imgProd">
-        <img src="../../../assets/imagenes/{{cat.imagen}}1.jpg" alt="">
-      </div>
-      <div class="titleProd">
-        <b>{{cat.title}}</b>
+<section>
+  <div class="contCat">
+    <div class="titulo">
+      <h1>CATEGORIAS</h1>
+    </div>
+    <div class="contenedor">
+      <div class="contProd" *ngFor='let cat of categorias'>
+        <div class="imgProd">
+          <img src="../../../assets/imagenes/{{cat.imagen}}1.jpg" alt="categorias">
+        </div>
+        <div class="titleProd">
+          <b>{{cat.title}}</b>
+        </div>
       </div>
     </div>
   </div>
+</section>

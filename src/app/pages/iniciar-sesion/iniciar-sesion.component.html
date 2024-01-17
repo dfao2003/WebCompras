@@ -1,29 +1,35 @@
-<div class="titulo">
-  <h1>INICIAR SESION</h1>
+<div class="contIniSes">
+  <div class="contenedor">
+    <div class="titulo">
+      <h2>INICIAR SESION</h2>
+    </div>
+    <form>
+      <div class="campo">
+        <label for="txtUsuario">Nombre de Usuario</label><br>
+        <!--
+        <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
+  
+        -->
+          <input type="text" name="txtUsuario" id="txtUsuario">
+      </div>
+      <div class="campo">
+        <label for="txtUsuario">Contraseña</label><br>
+  
+        <!--
+        <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
+  
+        -->
+        <input type="text" name="txtContra" id="txtContra">
+      </div>
+    </form>
+    <div class="botones">
+      <button type="button" class="aceptar">Aceptar</button>
+      <button type="button" class="cancelar">Cancelar</button>
+    </div>
+    <div class="registrarse">
+      <a href="#">Registrarse</a>
+    </div>
+  </div>
 </div>
 
-<div class="contenedor">
-  <form>
-    <div class="campo">
-      <label for="txtUsuario">Nombre de Usuario</label><br>
 
-<!--
-      <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
-
-      -->
-        <input type="text" name="txtUsuario" id="txtUsuario">
-    </div>
-    <div class="campo">
-      <label for="txtUsuario">Contrasenia</label><br>
-
-<!--
-      <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
-
-      -->
-      <input type="text" name="txtContra" id="txtContra">
-    </div>
-    <button type="button" class="aceptar">Aceptar</button>
-    <button type="button" class="cancelar">Cancelar</button>
-  </form>
-  <a href="#">Registrarse</a>
-</div>

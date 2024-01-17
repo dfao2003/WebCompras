@@ -1,46 +1,50 @@
-<div class="titulo">
-  <h1>REGISTRO DE USUARIO</h1>
-</div>
-
-<div class="contenedor">
-  <form>
-    <div class="campo">
-      <label for="txtUsuario">Nombre de Usuario</label><br>
-
-<!--
-      <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
-
-      -->
-        <input type="text" name="txtUsuario" id="txtUsuario">
+<div class="contReg">
+  <div class="contenedor">
+    <div class="titulo">
+      <h2>REGISTRO DE USUARIO</h2>
     </div>
-    <div class="campo">
-      <label for="txtEmail">E-Mail</label><br>
-
-<!--
-      <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
-
-      -->
-      <input type="text" name="txtEmail" id="txtEmail">
+    <form>
+      <div class="campo">
+        <label for="txtUsuario">Nombre de Usuario</label><br>
+        <!--
+        <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'
+        -->
+          <input type="text" name="txtUsuario" id="txtUsuario">
+      </div>
+      <div class="campo">
+        <label for="txtEmail">E-Mail</label><br>
+  
+  <!--
+        <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
+  
+        -->
+        <input type="text" name="txtEmail" id="txtEmail">
+      </div>
+      <div class="campo">
+        <label for="txtUsuario">Contraseña</label><br>
+  
+  <!--
+        <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
+  
+        -->
+        <input type="text" name="txtContra" id="txtContra">
+      </div>
+      <div class="campo">
+        <label for="txtReContra">Repetir Contraseña</label><br>
+  
+  <!--
+        <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
+  
+        -->
+        <input type="text" name="txtReContra" id="txtReContra">
+      </div>
+      <div class="botones">
+        <button type="button" class="aceptar">Aceptar</button>
+        <button type="button" class="cancelar">Cancelar</button>
+      </div>
+    </form>
+    <div class="iniSes">
+      <a href="#">Iniciar Sesion</a>
     </div>
-    <div class="campo">
-      <label for="txtUsuario">Contraseña</label><br>
-
-<!--
-      <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
-
-      -->
-      <input type="text" name="txtContra" id="txtContra">
-    </div>
-    <div class="campo">
-      <label for="txtReContra">Repetir Contraseña</label><br>
-
-<!--
-      <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
-
-      -->
-      <input type="text" name="txtReContra" id="txtReContra">
-    </div>
-    <button type="button" class="aceptar">Aceptar</button>
-    <button type="button" class="cancelar">Cancelar</button>
-  </form>
+  </div>  
 </div>
