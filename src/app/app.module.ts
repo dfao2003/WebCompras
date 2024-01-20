@@ -7,8 +7,6 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { CategoriasComponent } from './pages/categorias/categorias.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
-import { SignupComponent } from './form/signup/signup.component';
-import { RegisterComponent } from './form/register/register.component';
 import { AcercadeComponent } from './pages/acercade/acercade.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
@@ -23,8 +21,6 @@ import { FormsModule } from '@angular/forms';
     MenuComponent,
     CategoriasComponent,
     CarritoComponent,
-    SignupComponent,
-    RegisterComponent,
     AcercadeComponent,
     FooterComponent,
     HeaderComponent,
