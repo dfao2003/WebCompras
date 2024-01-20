@@ -15,6 +15,7 @@ import { IniciarSesionComponent } from './pages/iniciar-sesion/iniciar-sesion.co
 import { RegistrarseComponent } from './pages/registrarse/registrarse.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { EditarUsuarioComponent } from './pages/editar-usuario/editar-usuario.component'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { EditarUsuarioComponent } from './pages/editar-usuario/editar-usuario.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

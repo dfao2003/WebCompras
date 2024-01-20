@@ -8,6 +8,7 @@ import { RegistrarseComponent } from './pages/registrarse/registrarse.component'
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { CategoriasProductosComponent } from './pages/categorias-productos/categorias-productos.component';
 import { EditarUsuarioComponent } from './pages/editar-usuario/editar-usuario.component'
+import { ProductoComponent } from './pages/producto/producto.component';
 
 const routes: Routes = [
   {path: 'paginas/inicio', component: InicioComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'paginas/contacto', component: ContactoComponent},
   {path: 'paginas/editarusuario', component: EditarUsuarioComponent},
   {path: 'paginas/cat_productos', component: CategoriasProductosComponent},
+  {path: 'paginas/producto', component: ProductoComponent}
 ];
 
 @NgModule({
