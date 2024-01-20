@@ -8,17 +8,7 @@ import { Router } from '@angular/router';
 })
 export class InicioComponent {
 
-<<<<<<< HEAD
   titulo: string = 'PRODUCTOS DESTACADO';
-=======
-  constructor(private router:Router){
-
-  }
-
-  irProducto(){
-    this.router.navigate(['paginas/producto']);
-  }
->>>>>>> main
 
 }
 
