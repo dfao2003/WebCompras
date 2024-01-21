@@ -1,12 +1,20 @@
+.contCont{
+  padding: 25px;
+}
+
 .titulo{
   width: auto;
   text-align: center;
 }
 
 .contenedor{
-  width: auto;
+  width: 400px;
   height: auto;
-  margin: 0% 30%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .campo{
@@ -23,54 +31,65 @@ label{
   word-wrap: break-word;
 }
 
-input, textarea{
-  width: 700px;
-  height: 80px;
+input{
+  width: 100%;
+  height: 40px;
   background: #F3F3F3;
   box-shadow: 3.035381555557251px 3.035381555557251px 2.4283053874969482px rgba(0, 0, 0, 0.25);
-  border-radius: 18px;
-  font-size: 25px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.botones{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 button{
-  width: auto;
-  height: auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  border-radius: 20px;
-  overflow: hidden;
+  width: 250px;
+  height: 40px;
   border: 2px black solid;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
-  display: inline-flex;
   text-align: center;
   color: white;
-  font-size: 18.21px;
+  font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  word-wrap: break-word;
+  border-radius: 10px;
+}
+
+button:hover{
+  cursor: pointer;
 }
 
 .aceptar{
   background: #26905B;
-  margin: 2% 20%;
+  width: 300px;
 }
 
 .cancelar{
   background: #C46161;
+  width: 300px;
+}
+
+.registrarse{
+  text-align: center;
 }
 
 a{
   width: auto;
   height: auto;
   text-align: center;
-  margin: 4% 45%;
 }
 
-#txtMensaje{
-  height: 500px;
+textarea{
+  width: 100%;
+  height: 100px;
+  padding: 5px;
 }
