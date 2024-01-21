@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  constructor(private router:Router){
 
+  }
+
+  IrInic(){
+    this.router.navigate(['paginas/inicio'])
+  }
+
+  IrCarr(){
+    this.router.navigate(['paginas/carrito']);
+  }
+
+  IrIniSes(){
+    this.router.navigate(['paginas/iniciarSesion']);
+  }
+
+  IrReg(){
+    this.router.navigate(['paginas/registrarse']);
+  }
 }

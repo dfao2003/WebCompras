@@ -1,78 +1,3 @@
-<style>
-    /**** FOOTER ****/
-  
-    footer{
-      background-color: #184834;
-      color: white;
-      padding: 10px;
-      padding: 25px;
-    }
-
-    .contInfo{
-        display: flex;
-        gap:10px;
-        justify-content: center;
-    }
-
-    .contCont{
-        width: 400px;
-        padding: 20px;
-    }
-
-    .menu{
-        width: 400px;
-        padding: 20px;
-    }
-
-    
-    ul{
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        list-style: none;
-    }
-
-    .text{
-        width: 150px;
-        border-radius: 7px;
-        padding: 7px;
-        text-align: left;
-        color: white;
-    }
-
-    .text:hover{
-        font-size: 15px;
-    }
-
-    a{
-        text-decoration: none;
-        font-size: 14px;
-    }
-
-    .contCont{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .contCont p{
-        font-size: 14px;
-    }
-
-    .contTelef{
-        
-        margin-top: 50px;
-    }
-
-    .contLogo{
-        border-top: 15px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
-
 <footer>
     <div class="contInfo">
         <div class="menu">
@@ -96,9 +21,12 @@
                 <p>Contactenos</p>
                 <p>(+593)98 356 4710 - (07)410 4891</p>
             </div>
+            <div class="contContactenos">
+                <button (click)="IrContac()">Escribir mensaje</button>
+            </div>
         </div>
     </div>
-    <div class="contLogo">
+    <div (click)="IrInic()" class="contLogo">
         <p>Logo</p>
     </div>
 </footer>

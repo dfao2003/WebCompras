@@ -10,5 +10,13 @@ export class InicioComponent {
 
   titulo: string = 'PRODUCTOS DESTACADO';
 
+  constructor(private route:Router){
+
+  }
+
+  IrProd(){
+    this.route.navigate(['paginas/producto']);
+  }
+
 }
 
