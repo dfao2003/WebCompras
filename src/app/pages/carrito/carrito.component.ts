@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./carrito.component.scss']
 })
 export class CarritoComponent {
-
+  titulo: string = 'CARRITO DE COMPRAS';
 }

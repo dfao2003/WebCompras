@@ -33,6 +33,12 @@ header{
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  transition: 0.2s;
+}
+
+.imgCarrito:hover{
+  cursor: pointer;
+  transform: scale(1.15);
 }
 
 .contLogo{
