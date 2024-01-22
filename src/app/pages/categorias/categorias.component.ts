@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-categorias',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./categorias.component.scss']
 })
 export class CategoriasComponent {
+
+  constructor(private router: Router){
+
+  }
 
   categorias = [
     {title: 'Belleza', imagen: 'bell'},
@@ -17,5 +22,9 @@ export class CategoriasComponent {
     {title: 'Libros', imagen: 'libro'},
     {title: 'Ropa', imagen: 'ropa'},
     {title: 'Salud', imagen: 'salud'},
-  ]
+  ];
+
+  IrProductos(){
+    this.router.navigate(['paginas/cat_productos']);
+  }
 }
