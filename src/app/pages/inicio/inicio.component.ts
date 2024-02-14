@@ -7,6 +7,7 @@ import { ProductosService } from 'src/app/services/productos.service';
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.scss']
 })
+
 export class InicioComponent implements OnInit{
 
   titulo: string = 'PRODUCTOS DESTACADO';

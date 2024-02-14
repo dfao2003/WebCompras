@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 import { Categoria } from 'src/app/domain/Categoria';
 import { Producto } from 'src/app/domain/Producto';
 import { CategoriasService } from 'src/app/services/categorias.service';
@@ -17,6 +17,8 @@ export class CategoriasProductosComponent {
   categoria: Categoria = new Categoria();  
 
   listaProductos?: any;
+
+  cod?: number;
 
   codigo?: number;
 
@@ -38,6 +40,19 @@ export class CategoriasProductosComponent {
       console.log("loadCategoria: " + data);
       this.categoria = <any>data;
     });
+  }
+
+  IrProd(producto: any){
+    console.log("Producto:", producto);
+    this.cod = producto.id;
+    console.log("Codigo del producto: " + this.cod);
+    let params: NavigationExtras = {
+      queryParams:{
+        producto: producto
+      }
+    }
+
+    this.router.navigate(['paginas/producto/codigo='+this.cod], params);
   }
 
 }

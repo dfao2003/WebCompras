@@ -6,18 +6,18 @@
         <h1>{{titulo}}</h1>
     </div>
     <div class="contProd">
-        <div class="cardProd">
+        <div *ngFor='let prod of ListaDetalles | async' class="cardProd">
             <div class="contImgProd">
                 <img src="../../../assets/imagenes/pantalon-negro.jpg" alt="Producto">
             </div>
             <div class="contCardInfo">
                 <div class="info">
                     <div class="infoTit">
-                        <b>Titulo del producto</b>
+                        <b>{{prod.nombre}}</b>
                     </div>
                     <div class="infoCa">
-                        <p><b>Precio: </b>$40.00</p>
-                        <p><b>Cantidad: </b>2</p>
+                        <p><b>Precio: </b></p>
+                        <p><b>Cantidad: </b></p>
                     </div>
                     <div class="infoPrec">
                         <b>Precio Total: $80.00</b>

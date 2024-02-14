@@ -7,21 +7,23 @@
       <h1>{{titulo}}{{categoria.nombre}}</h1>
     </div>
     <div class="contProductos">
-      <div *ngFor="let prod of listaProductos| async" class="contProd">
-        <div class="imgProd">
-          <img src="../../../assets/productos/{{prod.imagen}}" alt="">
-        </div>
-        <div class="infoProd">
-          <div class="titleProd">
-            <b>{{prod.nombre}}</b>
+      <div class="contProdDiv" *ngFor="let prod of listaProductos| async">
+        <div class="contProd" (click)="IrProd(prod)">
+          <div class="imgProd">
+            <img src="../../../assets/productos/{{prod.imagen}}.jpg" alt="">
           </div>
-          <div class="DescProd">
-            <p>{{prod.descripcion}}</p>
+          <div class="infoProd">
+            <div class="titleProd">
+              <b>{{prod.nombre}}</b>
+            </div>
+            <div class="DescProd">
+              <p>{{prod.descripcion}}</p>
+            </div>
+            <div class="precioProd">
+              <b>Precio: ${{prod.precio}}</b>
+            </div>
           </div>
-          <div class="precioProd">
-            <b>Precio: ${{prod.precio}}</b>
-          </div>
-        </div>
+      </div>
       </div>
     </div>
   </section>
