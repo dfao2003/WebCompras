@@ -1,122 +1,17 @@
-<style>
-
-    section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .contProd{
-        display: flex;
-        flex-direction: row;
-        padding: 25px;
-        width: 75%;
-    }
-
-    .contImg{
-        width: 35%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contImg img{
-        width: 350px;
-        border-radius: 15px;
-    }
-
-    .contInfoProd{
-        width: 65%;
-        padding-left: 25px;
-        padding-right: 25px;
-        border: 1px solid green;
-        margin-left: 15px;
-        border-radius: 15px;
-    }
-
-    .tituloProd{
-        text-align: center;
-        height: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    .descProd{
-        height: 60%;
-        padding: 15px;
-    }
-
-    .precio{
-        height: 10%;
-        padding-left: 15px;
-        padding-right: 15px;
-        display: flex;
-        align-items: center;
-        color: green
-    }
-
-    .agregar{
-        height: 10%;
-        padding-left: 15px;
-        padding-right: 15px;
-        display: flex;
-        align-items: center;
-    }
-
-    .agregar .cant{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        height: 30px;
-    }
-
-    .agregar .cant input{
-        width: 20%;
-        text-align: center;
-        height: 25px;
-    }
-
-    .agregar .boton{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .agregar .boton button{
-        height: 30px;
-        width: 250px;
-        border: none;
-        color: white;
-        background-color: #22815a;
-        cursor: pointer;
-        border-radius: 7px;
-        transition: 0.3s;
-    }
-
-    .agregar .boton button:hover{
-        transform: scale(1.03);
-    }
-
-</style>
 <section>
     <div class="contProd">
         <div class="contImg">
-            <img src="../../../assets/imagenes/pantalon-negro.jpg" alt="Pantalon negro">
+            <img src="../../../assets/productos/{{producto.imagen}}" alt="Pantalon negro">
         </div>
         <div class="contInfoProd">
             <div class="tituloProd">
-                <h3>Pantalones deportivos negros para hombre</h3>
+                <h3>{{producto.nombre}}</h3>
             </div>
             <div class="descProd">
-                <p>Pantalon Jean negro de hombre con gran calidad y resistencia, al lavar este producto la perdida de color es casi nula lo que lo hace optimo para el día a día</p>
+                <p>{{producto.descripcion}}</p>
             </div>
             <div class="precio">
-                <b>Precio: $39.99</b>
+                <b>Precio: ${{producto.precio}}</b>
             </div>
             <div class="agregar">
                 <div class="cant">

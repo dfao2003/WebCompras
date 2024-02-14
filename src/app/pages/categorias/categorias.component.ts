@@ -1,30 +1,36 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
+import { CategoriasService } from 'src/app/services/categorias.service';
 
 @Component({
   selector: 'app-categorias',
   templateUrl: './categorias.component.html',
   styleUrls: ['./categorias.component.scss']
 })
-export class CategoriasComponent {
+export class CategoriasComponent implements OnInit{
 
-  constructor(private router: Router){
+  Listacategorias: any;
+
+  cod?: number;
+
+  constructor(private router: Router, private serviciosCategorias: CategoriasService){
 
   }
 
-  categorias = [
-    {title: 'Belleza', imagen: 'bell'},
-    {title: 'Computadoras', imagen: 'comp'},
-    {title: 'Deportes', imagen: 'dep'},
-    {title: 'Electronicos', imagen: 'elec'},
-    {title: 'Hogar', imagen: 'hog'},
-    {title: 'Jugueteria', imagen: 'jug'},
-    {title: 'Libros', imagen: 'libro'},
-    {title: 'Ropa', imagen: 'ropa'},
-    {title: 'Salud', imagen: 'salud'},
-  ];
+  ngOnInit(): void {
+    this.Listacategorias=this.serviciosCategorias.getCategorias();
+  }
 
-  IrProductos(){
-    this.router.navigate(['paginas/cat_productos']);
+  IrProductos(categoria: any){
+    console.log("Categoria:", categoria);
+    this.cod = categoria.id;
+    console.log("Codigo de la categoria: " + this.cod);
+    let params: NavigationExtras = {
+      queryParams:{
+        categoria: categoria
+      }
+    }
+
+    this.router.navigate(['paginas/cat_productos/codigo='+this.cod], params);
   }
 }

@@ -4,12 +4,12 @@
       <h1>CATEGORIAS</h1>
     </div>
     <div class="contenedor">
-      <div (click)="IrProductos()" class="contProd" *ngFor='let cat of categorias'>
+      <div *ngFor="let cat of Listacategorias| async" (click)="IrProductos(cat)" class="contProd">
         <div class="imgProd">
-          <img src="../../../assets/imagenes/{{cat.imagen}}1.jpg" alt="categorias">
+          <img src="../../../assets/categorias/{{cat.imagen}}" alt="categorias">
         </div>
         <div class="titleProd">
-          <b>{{cat.title}}</b>
+          <b>{{cat.nombre}}</b>
         </div>
       </div>
     </div>

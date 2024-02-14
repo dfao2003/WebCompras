@@ -19,8 +19,8 @@ const routes: Routes = [
   {path: 'paginas/registrarse', component: RegistrarseComponent},
   {path: 'paginas/contacto', component: ContactoComponent},
   {path: 'paginas/editarusuario', component: EditarUsuarioComponent},
-  {path: 'paginas/cat_productos', component: CategoriasProductosComponent},
-  {path: 'paginas/producto', component: ProductoComponent},
+  {path: 'paginas/cat_productos/:codigo', component: CategoriasProductosComponent},
+  {path: 'paginas/producto/:codigo', component: ProductoComponent},
   {path: 'paginas/carrito', component: CarritoComponent}
 ];
 

@@ -20,6 +20,11 @@
     padding-bottom: 30px;
     padding-left: 50px;
     padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
   }
   
   .contProd{

@@ -1,25 +1,25 @@
 
 <section>
     <div class="contImg">
-      <img src="../../../assets/imagenes/ropa1.jpg" alt="Ropa">
+      <img src="../../../assets/categorias/{{categoria.imagen}}" alt="imagen">
     </div>
     <div class="contTit">
-      <h1>{{titulo}}</h1>
+      <h1>{{titulo}}{{categoria.nombre}}</h1>
     </div>
     <div class="contProductos">
-      <div (click)="IrProd()" class="contProd">
+      <div *ngFor="let prod of listaProductos| async" class="contProd">
         <div class="imgProd">
-          <img src="../../../assets/imagenes/pantalon-negro.jpg" alt="">
+          <img src="../../../assets/productos/{{prod.imagen}}" alt="">
         </div>
         <div class="infoProd">
           <div class="titleProd">
-            <b>Pantalones deportivos para hombre</b>
+            <b>{{prod.nombre}}</b>
           </div>
           <div class="DescProd">
-            <p>Pantalones negros suaves y de gran resistencia para toda ocasion</p>
+            <p>{{prod.descripcion}}</p>
           </div>
           <div class="precioProd">
-            <b>Precio: $39.99</b>
+            <b>Precio: ${{prod.precio}}</b>
           </div>
         </div>
       </div>
