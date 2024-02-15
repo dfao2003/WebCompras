@@ -19,6 +19,9 @@
 .contProd{
     margin-top: 25px;
     margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
 }
 
 .cardProd{
@@ -133,4 +136,8 @@ button:hover{
 
 .cancelar{
     background: #C46161;
+}
+
+.contElim:hover{
+    cursor: pointer;
 }

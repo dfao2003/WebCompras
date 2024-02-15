@@ -17,6 +17,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { EditarUsuarioComponent } from './pages/editar-usuario/editar-usuario.component'
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { ProductoComponent } from './pages/producto/producto.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {HttpClientModule} from '@angular/common/http';
     RegistrarseComponent,
     ContactoComponent,
     EditarUsuarioComponent,
+    ProductoComponent
   ],
   imports: [
     BrowserModule,

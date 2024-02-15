@@ -4,26 +4,18 @@
       <h2>INICIAR SESION</h2>
     </div>
     <form>
+      <b>{{mensaje}}</b>
       <div class="campo">
         <label for="txtUsuario">Nombre de Usuario</label><br>
-        <!--
-        <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
-  
-        -->
-          <input type="text" name="txtUsuario" id="txtUsuario">
+        <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='usuario'>
       </div>
       <div class="campo">
-        <label for="txtUsuario">Contraseña</label><br>
-  
-        <!--
-        <input type="text" name="txtUsuario" id="txtUsuario" [(ngModel)]='tarea.tarea'>
-  
-        -->
-        <input type="text" name="txtContra" id="txtContra">
+        <label for="txtContra">Contraseña</label><br>
+        <input type="text" name="txtContra" id="txtContra" [(ngModel)]='contrasena'>
       </div>
     </form>
     <div class="botones">
-      <button type="button" class="aceptar">Aceptar</button>
+      <button (click)="IniciarSesion()" type="button" class="aceptar">Iniciar Sesion</button>
       <button type="button" class="cancelar">Cancelar</button>
     </div>
     <div class="registrarse">

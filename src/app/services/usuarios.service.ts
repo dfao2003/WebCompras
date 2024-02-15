@@ -16,7 +16,7 @@ export class UsuariosService {
   }
 
   iniciarSesion(usuario: String, password: String){
-    let url = environment.PATH_WS+'/login';
+    let url = environment.PATH_WS+'/usuarios/login?usr='+usuario+'&pass='+password;
     return this.http.get<any>(url)
   }
 }

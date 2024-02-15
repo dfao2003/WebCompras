@@ -15,12 +15,15 @@
             </div>
             <div class="agregar">
                 <div class="cant">
-                    <b>Cantidad: </b>
-                    <input type="number">
+                    <form>
+                        <label for="numCantidad">Cantidad:</label>
+                        <input type="number" name="numCantidad" id="numCantidad" [(ngModel)]='cantidad'>
+                    </form>
                 </div>
                 <div class="boton">
-                    <button>Agregar al Carrito</button>
+                    <button (click)="AgregarDetalle()">Agregar al Carrito</button>
                 </div>
+                
             </div>
         </div>
     </div>

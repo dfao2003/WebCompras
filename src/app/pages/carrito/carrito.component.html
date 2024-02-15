@@ -8,22 +8,22 @@
     <div class="contProd">
         <div *ngFor='let prod of ListaDetalles | async' class="cardProd">
             <div class="contImgProd">
-                <img src="../../../assets/imagenes/pantalon-negro.jpg" alt="Producto">
+                <img src="../../../assets/productos/{{prod.producto.imagen}}.jpg" alt="Producto">
             </div>
             <div class="contCardInfo">
                 <div class="info">
                     <div class="infoTit">
-                        <b>{{prod.nombre}}</b>
+                        <b>{{prod.producto.nombre}}</b>
                     </div>
                     <div class="infoCa">
-                        <p><b>Precio: </b></p>
-                        <p><b>Cantidad: </b></p>
+                        <p><b>Precio: </b>{{prod.producto.precio}}</p>
+                        <p><b>Cantidad: </b>{{prod.cantidad}}</p>
                     </div>
                     <div class="infoPrec">
-                        <b>Precio Total: $80.00</b>
+                        <b>Precio Total: ${{prod.subtotal}}</b>
                     </div>
                 </div>
-                <div class="contElim">
+                <div (click)="borrarProducto(prod.producto.id)" class="contElim">
                     <a>Eliminar Producto</a>
                 </div>
             </div>
@@ -32,15 +32,12 @@
     <div class="infoCar">
         <div class="contPriInfoCar">
             <div class="contInCaInfo">
-                <p>Cantidad de productos: 4</p>
-                <p>Cantidad Total de Productos: 11</p>
-                <p>Impuestos: $0.00</p>
-                <p>Precio sin impuestos: $547.00</p>
-                <b class="precioTot">Precio Total: $557.04</b>
+                <p>Cantidad de productos: {{sizeCarrito}}</p>
+                <b class="precioTot">Precio Total: {{precioRed}}</b>
             </div>
             <div class="contBot">
-                <button type="button" class="aceptar">Aceptar Compra</button>
-                <button type="button" class="cancelar">Cancelar y vaciar carrito</button>
+                <button type="button" class="aceptar" (click)="aceptarCompra()">Aceptar Compra</button>
+                <button type="button" class="cancelar" (click)="borrarCarrito()">Cancelar y vaciar carrito</button>
             </div>
         </div>
     </div>
