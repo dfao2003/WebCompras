@@ -13,6 +13,7 @@ ul{
   list-style: none;
 }
 
+
 .text{
   width: 150px;
   border-radius: 7px;
@@ -21,11 +22,41 @@ ul{
   color: white;
 }
 
-.text:hover{
-  border: 1px solid white;
-}
-
 a{
   text-decoration: none;
   font-size: 15px;
+}
+
+
+@media screen and (max-width:500px) {
+  nav{
+    height: auto;
+  }
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+  }
+
+  li{
+    width: 100%;
+    display: flex;
+  }
+
+  
+  a{
+    width: 100%;
+    border: 2px solid green;
+  }
+
+  a:hover{
+    border: 2px solid white;
+  }
+
+  .text{
+    width: 100%;
+  }
 }

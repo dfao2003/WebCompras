@@ -10,6 +10,7 @@ import { CategoriasProductosComponent } from './pages/categorias-productos/categ
 import { EditarUsuarioComponent } from './pages/editar-usuario/editar-usuario.component'
 import { ProductoComponent } from './pages/producto/producto.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
+import { BuscadorComponent } from './pages/buscador/buscador.component';
 
 const routes: Routes = [
   {path: 'paginas/inicio', component: InicioComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path: 'paginas/editarusuario', component: EditarUsuarioComponent},
   {path: 'paginas/cat_productos/:codigo', component: CategoriasProductosComponent},
   {path: 'paginas/producto/:codigo', component: ProductoComponent},
-  {path: 'paginas/carrito', component: CarritoComponent}
+  {path: 'paginas/carrito', component: CarritoComponent},
+  {path: 'paginas/buscador/:nombre', component: BuscadorComponent}
 ];
 
 @NgModule({

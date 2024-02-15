@@ -15,17 +15,15 @@
     justify-content: center;
   }
   
-  .contProductos{
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
+  .contProds{
     display: flex;
     flex-wrap: wrap;
+    padding: 25px;
+    gap:20px;
     justify-content: center;
     align-items: center;
-    gap:15px;
   }
+  
   
   .contProd{
     background-color: #d0dccc;
@@ -78,9 +76,4 @@
     display: flex;
     align-items: center;
   }
-
-  @media screen and (max-width:550px) {
-    .contImg{
-      height: 150px;
-    }
-  }
+  

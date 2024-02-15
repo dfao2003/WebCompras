@@ -41,4 +41,10 @@ export class TransaccionesService {
     return this.http.delete<any>(url);
   }
 
+  getProdutosBusqueda(nom: string){
+    let url = environment.PATH_WS+"/compras/prods?"+nom;
+    console.log(url);
+    return this.http.get<any>(url);
+  }
+
 }

@@ -5,6 +5,7 @@ footer{
     color: white;
     padding: 10px;
     padding: 25px;
+    height: auto;
   }
 
   .contInfo{
@@ -69,6 +70,13 @@ footer{
 
   .contLogo:hover{
     cursor: pointer;
+  }
+
+  .contLogo img{
+    width: auto;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
   }
 
 

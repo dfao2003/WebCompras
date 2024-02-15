@@ -74,6 +74,13 @@ header{
   align-items: center;
 }
 
+.contLogo img{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
 .contLogo:hover{
   cursor: pointer;
 }
@@ -120,4 +127,26 @@ img{
 .buscar{
   max-width: 50%;
   height: auto;
+}
+
+//Responsive
+@media screen and (max-width:700px) {
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contBusc{
+    width: 100%;
+  }
+
+  .infUser{
+    width: 100%;
+  }
+
+  .contOpc{
+    width: 100%;
+  }
 }

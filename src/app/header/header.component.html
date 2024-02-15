@@ -1,13 +1,13 @@
 <header>
   <div (click)="IrInic()" class="contLogo">
-    <p>Logo</p>
+    <img src="../../assets/imagenes/logo1.png" alt="logo">
   </div>
   <div class="contBusc">
     <div class="busc">
       <div class="contInput">
-        <input type="search">
+        <input type="search" [(ngModel)]="busqueda">
       </div>
-      <div class="iconBusc">
+      <div class="iconBusc" (click)="buscar()">
         <img src="../assets/imagenes/busqueda.png" alt="Buscador" class="buscar">
       </div>
     </div>

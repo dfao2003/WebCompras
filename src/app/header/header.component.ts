@@ -11,6 +11,8 @@ export class HeaderComponent {
 
   }
 
+  busqueda: String = "";
+
   IrInic(){
     this.router.navigate(['paginas/inicio'])
   }
@@ -25,5 +27,10 @@ export class HeaderComponent {
 
   IrReg(){
     this.router.navigate(['paginas/registrarse']);
+  }
+
+  buscar(){
+    console.log(this.busqueda);
+    this.router.navigate(['paginas/buscador/nombre='+this.busqueda]);
   }
 }
